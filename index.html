@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PatchShading: High-Quality Human Reconstruction by Patch Warping and Shading Refinement.">
+        content="FastHuman: Reconstructing High-Quality Clothed Human in Minutes.">
   <meta name="keywords" content="PatchShading">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PatchShading: High-Quality Human Reconstruction by Patch Warping and Shading Refinement</title>
+  <title>FastHuman: Reconstructing High-Quality Clothed Human in Minutes</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -79,7 +79,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PatchShading: High-Quality Human Reconstruction by Patch Warping and Shading Refinement</h1>
+          <h1 class="title is-1 publication-title">FastHuman: Reconstructing High-Quality Clothed Human in Minutes</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a>Lixiang Lin</a><sup>1</sup>,
@@ -212,14 +212,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Human reconstruction from multi-view images plays an important role in many applications.
-          Although neural rendering methods have achieved promising results on synthesising realistic images, it is still difficult to handle the ambiguity between the geometry and appearance using only rendering loss. 
-          Moreover, it is very computationally intensive to render a whole image as each pixel requires a forward network inference. 
-          To tackle these challenges, we propose a novel approach called PatchShading to reconstruct high-quality mesh of human body from multi-view posed images. 
-          We first present a patch warping strategy to constrain multi-view photometric consistency explicitly. 
-          Second, we adopt sphere harmonics (SH) illumination and shape from shading image formation to further refine the geometric details. 
-          By taking advantage of the oriented point clouds shape representation and SH shading, our proposed method significantly reduce the optimization and rendering time compared to those implicit methods. 
-          The encouraging results on both synthetic and real-world datasets demonstrate the efficacy of our proposed approach.
+          We propose an approach for optimizing high-quality clothed human body shapes in minutes, using multi-view posed images. 
+          While traditional neural rendering methods struggle to disentangle geometry and appearance using only rendering loss, and are computationally intensive, our method uses a mesh-based patch warping technique to ensure multi-view photometric consistency, and sphere harmonics (SH) illumination to refine geometric details efficiently.
+          We employ oriented point clouds' shape representation and SH shading, which significantly reduces optimization and rendering times compared to implicit methods. 
+          Our approach has demonstrated promising results on both synthetic and real-world datasets, making it an effective solution for rapidly generating high-quality human body shapes.
         </div>
       </div>
     </div>
@@ -339,11 +335,10 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{lin2022patchshading,
-      title={PatchShading: High-Quality Human Reconstruction by Patch Warping and Shading Refinement}, 
+      title={FastHuman: Reconstructing High-Quality Clothed Human in Minutes}, 
       author={Lixiang Lin and Songyou Peng and Qijun Gan and Jianke Zhu},
-      year={2022},
-      eprint={2211.14485},
-      archivePrefix={arXiv},
+      year={2024},
+      booktitle={International Conference on 3D Vision, 3DV},
 }</code></pre>
   </div>
 </section>
